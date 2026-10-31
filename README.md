@@ -6,20 +6,21 @@ Private workspace for recording important decisions, tracking assumptions and ou
 
 **https://decision-ledger-app.netlify.app/**
 
-Hosted on Netlify (public). Includes:
-
-- **Dark mode** — toggle in the header or Settings; respects system preference and persists in this browser
-- **Mobile layout** — responsive bottom navigation, safe-area padding, 44px touch targets
+- Dark mode + mobile layout
+- CookieYes consent banner
+- Google Analytics 4 (`G-L1GB3P5SB8`) with Consent Mode
+- Privacy & Terms pages
 
 ## Repository
 
 https://github.com/sivathee-oss/decision-ledger
 
-The live deploy is the full single-file app. Clone or download from Netlify deploy, or open the site and save the page.
+Full single-file source is on Netlify. To sync into this repo:
 
-## What this is
-
-Early-access web app. Data stays in the browser (localStorage). No accounts or backend in this version.
+```bash
+curl -o index.html https://decision-ledger-app.netlify.app/
+git add index.html && git commit -m "Sync full app" && git push
+```
 
 ## Feedback
 
