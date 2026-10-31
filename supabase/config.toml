@@ -1,0 +1,3 @@
+# Supabase gateway checks the caller's signed-in user JWT before invoking chatgpt.
+[functions.chatgpt]
+verify_jwt = true

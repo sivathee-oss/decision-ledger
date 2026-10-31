@@ -1,0 +1,20 @@
+{
+  "name": "decision-ledger-stripe-integration",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check netlify/functions/lib/core.mjs && node --check netlify/functions/stripe-webhook.mjs && node --check netlify/functions/billing-checkout.mjs",
+    "dev": "netlify dev",
+    "build": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "stripe": "^23.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^23.0.0"
+  },
+  "engines": { "node": ">=22" }
+}
