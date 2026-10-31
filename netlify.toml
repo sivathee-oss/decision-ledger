@@ -1,0 +1,54 @@
+[build]
+  publish = "dist"
+  functions = "netlify/functions"
+  command = "npm run build"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/billing/config"
+  to = "/.netlify/functions/billing-config"
+  status = 200
+
+[[redirects]]
+  from = "/api/billing/workspace"
+  to = "/.netlify/functions/billing-workspace"
+  status = 200
+
+[[redirects]]
+  from = "/api/billing/checkout"
+  to = "/.netlify/functions/billing-checkout"
+  status = 200
+
+[[redirects]]
+  from = "/api/billing/portal"
+  to = "/.netlify/functions/billing-portal"
+  status = 200
+
+[[redirects]]
+  from = "/api/billing/status"
+  to = "/.netlify/functions/billing-status"
+  status = 200
+
+[[redirects]]
+  from = "/api/billing/invoice"
+  to = "/.netlify/functions/billing-invoice"
+  status = 200
+
+[[redirects]]
+  from = "/api/stripe/webhook"
+  to = "/.netlify/functions/stripe-webhook"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+
+[[redirects]]
+  from = "/api/billing/protected-example"
+  to = "/.netlify/functions/billing-entitlement-example"
+  status = 200
