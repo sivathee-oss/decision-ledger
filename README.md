@@ -2,16 +2,24 @@
 
 Private workspace for recording important decisions, tracking assumptions and outcomes, and building organisational memory.
 
-## Live app
+## Live site
 
-Open `index.html` in this repository, or host it on Netlify / GitHub Pages.
+**https://decision-ledger-qpk4.netlify.app/**
 
-## Host
+Hosted on Netlify (public, no password).
 
-Single self-contained HTML file — no build step.
+## Repository
 
-- [GitHub Pages](https://pages.github.com/)
+https://github.com/sivathee-oss/decision-ledger
+
+## What this is
+
+A single-file early-access web app. Data stays in the browser (localStorage). No accounts or backend in this version.
+
+## Host it yourself
+
 - [Netlify Drop](https://app.netlify.com/drop)
+- [GitHub Pages](https://pages.github.com/)
 - [Cloudflare Pages](https://dash.cloudflare.com/?to=/:account/pages)
 
 ## Feedback
