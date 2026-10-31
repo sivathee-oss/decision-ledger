@@ -4,9 +4,9 @@ Private workspace for recording important decisions, tracking assumptions and ou
 
 ## Live site
 
-**https://decision-ledger-qpk4.netlify.app/**
+**https://decision-ledger-app.netlify.app/**
 
-Hosted on Netlify (public, no password).
+Hosted on Netlify (public).
 
 ## Repository
 
